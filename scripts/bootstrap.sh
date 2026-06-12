@@ -15,7 +15,7 @@ if ! command -v sesh >/dev/null 2>&1; then
     Linux)
       if [ "$CODER" = "true" ]; then
         mkdir -p /workspace/bin
-        GOBIN=/workspace/bin go install github.com/joshmedeski/sesh@latest
+        GOBIN=/workspace/bin go install github.com/joshmedeski/sesh/v2@latest
       else
         mkdir -p "$HOME/.local/bin"
         GOBIN="$HOME/.local/bin" go install github.com/joshmedeski/sesh@latest
